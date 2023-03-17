@@ -4286,10 +4286,10 @@ neo-async@^2.6.2:
   resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-ngx-aurora-pattern-library@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/ngx-aurora-pattern-library/-/ngx-aurora-pattern-library-0.0.3.tgz#7a682e0d3d8de97e4bd2672abbb8fb2b960b9690"
-  integrity sha512-6mhRKTXlucjX+mk7Icg80bNnAkcalVv/a6oH5J33upkIDjUcF+Td0daDhDSN+KbUHu9+uwXDKFpal+qaUvp8NA==
+ngx-aurora-pattern-library@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/ngx-aurora-pattern-library/-/ngx-aurora-pattern-library-0.0.4.tgz#6189a7593277dfbc6230a5c6875a9b80ab6969da"
+  integrity sha512-rKibfvpc3FwUgyn9jWeDJnximtEMvi++N4Jsy2ukUdr0ucK69VP75oM32NUSFsq/UEuN+mHqKNtLoD4exUGh8g==
   dependencies:
     tslib ">=2.0.0"
 
