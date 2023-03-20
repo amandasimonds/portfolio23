@@ -1,0 +1,17 @@
+@import '../../styles/styles.scss';
+
+.portfolio-button {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    border-radius: 2px;
+    height: 40px;
+    padding: 0 12px;
+    background-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

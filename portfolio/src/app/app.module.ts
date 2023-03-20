@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {AuroraButtonModule} from 'ngx-aurora-pattern-library';
 import { IntroComponent } from './intro/intro.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IntroComponent
+    IntroComponent,
+    NavigationComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

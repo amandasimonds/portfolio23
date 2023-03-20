@@ -3,3 +3,44 @@
         position: fixed;
     }
 }
+
+.flex {
+    display: flex;
+
+    &-column {
+        flex-direction: column;
+    }
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.padding {
+    &-left {
+        &-12 {
+            padding-left: 12px;
+        }
+    }
+}
+
+.margin {
+    &-bottom {
+        &-sm {
+            margin-bottom: 16px;
+        }
+        &-md {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.gap {
+    &-xs {
+        gap: 12px;
+    }
+
+    &-md {
+        gap: 24px;
+    }
+}
