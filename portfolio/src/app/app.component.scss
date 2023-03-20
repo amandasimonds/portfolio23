@@ -2,3 +2,12 @@ html {
     background-color: #131D7F;
 }
 
+.squiggly {
+    top: -29px;
+    right:0;
+
+    &-2 {
+        top: 0px;
+        right: -72px;
+    }
+}
