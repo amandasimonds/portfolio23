@@ -1,1 +1,5 @@
-$secondary-color: #2AD1D3;
+$secondary-color: #2ad1d3;
+
+:root {
+    --color-secondary: #{$secondary-color};
+}

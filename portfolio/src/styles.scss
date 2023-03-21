@@ -1,4 +1,5 @@
 @import '../node_modules/ngx-aurora-pattern-library/lib/styles/aurora-theme.scss';
+
 @import './app/styles/styles.scss';
 
 @font-face {
@@ -7,11 +8,11 @@
 }
 
 html {
-    background-color: #131D7F;
+    background-color: #131d7f;
     font-family: inter;
 }
 
 body {
-color: white;
-font-weight: 100;
+    color: white;
+    font-weight: 100;
 }
