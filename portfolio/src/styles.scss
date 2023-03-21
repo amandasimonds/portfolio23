@@ -1,18 +1,18 @@
-@import '../node_modules/ngx-aurora-pattern-library/lib/styles/aurora-theme.scss';
+@import '../node_modules/ngx-aurora-pattern-library/styles/aurora-theme.css';
 
 @import './app/styles/styles.scss';
 
-@font-face {
-    font-family: inter;
-    src: url('./assets/fonts/Inter-Regular.ttf');
-}
+// @font-face {
+//     font-family: inter;
+//     src: url('./assets/fonts/Inter-Regular.ttf');
+// }
 
-html {
-    background-color: #131d7f;
-    font-family: inter;
-}
+// html {
+//     background-color: #131d7f;
+//     font-family: inter;
+// }
 
-body {
-    color: white;
-    font-weight: 100;
-}
+// body {
+//     color: white;
+//     font-weight: 100;
+// }
