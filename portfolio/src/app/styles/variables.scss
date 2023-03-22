@@ -1,12 +1,9 @@
 @import './style-dictionary/style-dictionary-variables.scss';
 
-$secondary-color: #2ad1d3;
-
 :root {
-    --color-secondary: #{$secondary-color};
     --apl-color-warn:#{$apl-color-warn};
     --apl-color-warn-2: #{$apl-color-warn-2};
-    --apl-color-blue: #{$apl-color-blu};
+    --apl-color-blue: #{$apl-color-blue};
     --apl-color-blue-2: #{$apl-color-blue-2};
     --apl-color-blue-3: #{$apl-color-blue-3};
     --apl-color-light-blue: #{$apl-color-light-blue};
@@ -19,7 +16,9 @@ $secondary-color: #2ad1d3;
     --apl-color-primary-hover: #{apl-color-primary-hover};
     --apl-color-success-default: #{$apl-color-success-default};
     --apl-color-success-hover: #{$apl-color-success-hover};
-    --apl-color-darks-black: #{$apl-color-darks-blac};
+    --apl-color-darks-black: #{$apl-color-darks-black};
     --apl-color-darks-blue: #{$apl-color-darks-blue};
     --apl-color-darks-gray: #{$apl-color-darks-gray};
+    --apl-color-secondary-hover: #{$apl-color-secondary-hover};
+    --apl-color-secondary-default: #{$apl-color-secondary-default};
 }
