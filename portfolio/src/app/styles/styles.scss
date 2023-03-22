@@ -1,2 +1,23 @@
 @import './util.scss';
 @import './variables.scss';
+@import './base.scss';
+
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+
+::-webkit-scrollbar-button:start:increment {
+    height: 17px;
+    display: block;
+}
+
+::-webkit-scrollbar {
+    width: 24px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 7px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 20px;
+    background-color: var(--apl-color-light-violet);
+}

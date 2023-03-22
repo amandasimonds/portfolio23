@@ -1,18 +1,32 @@
-html {
-    background-color: #131D7F;
+.background {
+    position: fixed;
 }
 
-.squiggly {
-    top: -29px;
-    right:0;
-
-    &-2 {
-        top: 0px;
-        right: -72px;
-    }
+.graphic {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 
-.container {
+.wrapper {
+    padding: 3rem;
+    height: 100vh;
+}
+
+.main-content {
+    // border: 1px solid white;
+    position: relative;
     height: 100%;
-    padding: 36px;
+    width: 100%;
+    padding-top:7rem;
+    overflow: auto;
 }
+
+section {
+    height: 100%;
+}
+
+// .container {
+//     height: 100%;
+//     padding: 36px;
+// }

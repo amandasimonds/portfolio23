@@ -1,26 +1,17 @@
-<div class="container flex">
-    <div class="background">
-        <img
-            src="../assets/dark aurora vector.svg"
-            alt=""
-            class="position-fixed squiggly-2"
-        />
-        <img
-            src="../assets/pink aurora vector.svg"
-            alt=""
-            class="position-fixed squiggly-2"
-        />
-        <img
-            src="../assets/squiggly.svg"
-            alt=""
-            class="position-fixed squiggly"
-        />
-        <img
-            src="../assets/squiggly.svg"
-            alt=""
-            class="position-fixed squiggly-2"
-        />
-    </div>
+<div class="background">
+    <img src="../assets/dark aurora vector.svg" alt="" class="graphic" />
+    <img src="../assets/pink aurora vector.svg" alt="" class="graphic" />
+    <img src="../assets/squiggly.svg" alt="" class="graphic" />
+    <img src="../assets/squiggly.svg" alt="" class="graphic" />
+</div>
+<div class="flex wrapper">
     <app-navigation></app-navigation>
-    <app-intro></app-intro>
+    <div class="container main-content">
+        <section>
+            <app-intro></app-intro>
+        </section>
+        <section id="about">
+            <app-about></app-about>
+        </section>
+    </div>
 </div>

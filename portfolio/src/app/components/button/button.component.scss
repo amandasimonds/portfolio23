@@ -2,8 +2,8 @@
     font-family: 'Inter';
     font-size: 16px;
     font-weight: 400;
-    border: 2px solid var(--color-secondary);
-    color: var(--color-secondary);
+    border: 2px solid var(--apl-color-secondary-default);
+    color: var(--apl-color-secondary-default);
     border-radius: 2px;
     height: 40px;
     padding: 0 12px;
@@ -11,5 +11,7 @@
 
     &:hover {
         cursor: pointer;
+        border: 2px solid var(--apl-color-secondary-hover);
+        color: var(--apl-color-secondary-hover);
     }
 }
