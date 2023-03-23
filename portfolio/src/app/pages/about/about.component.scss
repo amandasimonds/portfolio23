@@ -6,14 +6,14 @@
     border-radius: 50%;
     filter: contrast(1.4);
     opacity: 0.6;
-    transition: opacity ease-in-out .5s;
+    transition: opacity ease-in-out 0.5s;
     position: relative;
     z-index: 4;
     right: -74px;
     top: -116px;
 
     &:hover {
-        opacity: .9;
+        opacity: 0.9;
         // filter: contrast(1);
     }
 
@@ -27,5 +27,8 @@
     position: relative;
     top: -10px;
     height: 66px;
-
+    
+    @include respond(tablet) {
+        height: auto;
+    }
 }
