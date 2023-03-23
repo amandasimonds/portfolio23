@@ -1,23 +1,28 @@
 @import './util.scss';
 @import './variables.scss';
 @import './base.scss';
+@import './responsive.scss';
 
 ::-webkit-scrollbar-button:end:increment {
     display: block;
+    height: 50px;
 }
 
 ::-webkit-scrollbar-button:start:increment {
-    height: 17px;
+    height: 50px;
     display: block;
 }
 
 ::-webkit-scrollbar {
-    width: 24px;
+    width: 32px;
+    @include respond(tablet) {
+        display: none;
+    }
 }
 
 ::-webkit-scrollbar-thumb {
     border: 7px solid rgba(0, 0, 0, 0);
     background-clip: padding-box;
-    -webkit-border-radius: 20px;
-    background-color: var(--apl-color-light-violet);
+    -webkit-border-radius: 30px;
+    background-color: #9a9de96e ;
 }

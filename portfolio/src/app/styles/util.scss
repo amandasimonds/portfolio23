@@ -9,15 +9,11 @@
 }
 
 .container {
-    padding-inline: 2em;
     margin-inline: auto;
-    max-width: 80rem;
-    border:2px sold white;
 }
 
 .flex {
     display: flex;
-    gap: var(--gap, 1rem);
 
     &-column {
         flex-direction: column;
@@ -26,7 +22,6 @@
 
 .grid {
     display: grid;
-    gap: var(--gap, 1rem);
 }
 
 .sr-only {
@@ -43,6 +38,12 @@
 
 .justify-content-center {
     justify-content: center;
+}
+
+.align-items {
+    &-center {
+        align-items: center;
+    }
 }
 
 .padding {

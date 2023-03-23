@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core'
+import { Icons } from '../components/icons/github-icon'
 @Component({
-  selector: 'app-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.scss']
+    selector: 'app-navigation',
+    templateUrl: './navigation.component.html',
+    styleUrls: ['./navigation.component.scss'],
 })
-export class NavigationComponent implements OnInit {
+export class NavigationComponent {
+    public githubIcon = Icons.github;
+    public navMenuOpen = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    public toggleMobileNavMenu() {
+        this.navMenuOpen = !this.navMenuOpen
+    }
 }
