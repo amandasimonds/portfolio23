@@ -59,6 +59,15 @@ select {
     font: inherit;
 }
 
+a,
+a:hover,
+a:active,
+a:visited {
+    font: inherit;
+    color: inherit;
+    text-decoration: inherit;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {

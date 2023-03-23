@@ -22,6 +22,7 @@
         transition-timing-function: ease-in-out;
         z-index: 100;
         background-color: var(--apl-color-blue);
+        flex-direction: column;
     }
 }
 
@@ -32,6 +33,6 @@
     transition-timing-function: ease-in-out;
 }
 
-.logo {
-    height: 7rem;
-}
+// .logo {
+//     height: 7rem;
+// }

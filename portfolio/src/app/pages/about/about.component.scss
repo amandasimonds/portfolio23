@@ -1,9 +1,31 @@
+@import '../../styles/responsive.scss';
+
 .profile {
-    width: 34%;
+    min-width: 34%;
+    max-width: 100px;
     border-radius: 50%;
+    filter: contrast(1.4);
+    opacity: 0.6;
+    transition: opacity ease-in-out .5s;
+    position: relative;
+    z-index: 4;
+    right: -74px;
+    top: -116px;
+
+    &:hover {
+        opacity: .9;
+        // filter: contrast(1);
+    }
+
+    @include respond(tablet) {
+        right: 0;
+        top: 0;
+    }
 }
 
 .text-container {
     position: relative;
     top: -10px;
+    height: 66px;
+
 }

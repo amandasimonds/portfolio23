@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { IntroComponent } from './pages/intro/intro.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ButtonComponent } from './components/button/button.component';
-import { CardComponent } from './card/card.component';
+import { CardComponent } from './components/card/card.component';
 import { AboutComponent } from './pages/about/about.component';
+import { WorkExperienceComponent } from './pages/work-experience/work-experience.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AboutComponent } from './pages/about/about.component';
     NavigationComponent,
     ButtonComponent,
     CardComponent,
-    AboutComponent
+    AboutComponent,
+    WorkExperienceComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

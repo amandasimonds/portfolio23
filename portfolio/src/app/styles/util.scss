@@ -18,6 +18,10 @@
     &-column {
         flex-direction: column;
     }
+
+    &-row {
+        flex-direction: row;
+    }
 }
 
 .grid {
@@ -36,8 +40,14 @@
     border: 0;
 }
 
-.justify-content-center {
-    justify-content: center;
+.justify-content {
+    &-center {
+        justify-content: center;
+    }
+
+    &-space-between {
+        justify-content: space-between;
+    }
 }
 
 .align-items {

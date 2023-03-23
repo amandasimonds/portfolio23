@@ -1,12 +1,12 @@
-@import '../styles/responsive.scss';
+@import '../../styles/responsive.scss';
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1.5rem;
-    gap: 0.75rem;
-    border-radius: 5px;
+    padding: 3rem;
+    gap: 1rem;
+    border-radius: 12px;
 
     &-glow {
         background: var(--apl-color-blue);
@@ -17,5 +17,10 @@
     &-primary {
         background: var(--apl-color-primary-default);
         box-shadow: rgba(0, 29, 58, 0.461) 0px 8px 24px;
+    }
+
+    &-glass {
+        background-color: #131e7f66;
+        // border: 1px solid rgba(128, 12#131d7f8, 128, 0.282);
     }
 }
