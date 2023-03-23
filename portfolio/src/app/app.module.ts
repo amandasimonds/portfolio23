@@ -10,6 +10,7 @@ import { CardComponent } from './components/card/card.component';
 import { AboutComponent } from './sections/about/about.component';
 import { WorkExperienceComponent } from './sections/work-experience/work-experience.component';
 import { FooterComponent } from './sections/footer/footer.component';
+import { WorkComponent } from './sections/work/work.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './sections/footer/footer.component';
     CardComponent,
     AboutComponent,
     WorkExperienceComponent,
-    FooterComponent
+    FooterComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
