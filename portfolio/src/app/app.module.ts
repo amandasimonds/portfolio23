@@ -3,13 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IntroComponent } from './pages/intro/intro.component';
+import { IntroComponent } from './sections/intro/intro.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
-import { AboutComponent } from './pages/about/about.component';
-import { WorkExperienceComponent } from './pages/work-experience/work-experience.component';
-import { FooterComponent } from './pages/footer/footer.component';
+import { AboutComponent } from './sections/about/about.component';
+import { WorkExperienceComponent } from './sections/work-experience/work-experience.component';
+import { FooterComponent } from './sections/footer/footer.component';
+import { WorkComponent } from './sections/work/work.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './pages/footer/footer.component';
     CardComponent,
     AboutComponent,
     WorkExperienceComponent,
-    FooterComponent
+    FooterComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
