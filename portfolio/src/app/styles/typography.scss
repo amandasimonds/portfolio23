@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+@font-face {
+    font-family: inter;
+    src: url('../../assets/fonts/Inter-Regular.ttf');
+}
+
+html {
+    background-color: var(--apl-color-background-blue);
+    font-family: inter;
+}
+
+body {
+    color: var(--apl-text-body-color);
+    font-weight: 100;
+    font-size: var(--fz-xl);
+
+    @include respond(tablet) {
+        font-size: var(--fz-md);
+    }
+}
+
+h1 {
+    font-size: var(--fz-h1);
+    @include respond(tablet) {
+        font-size: var(--fz-xl);
+    }
+}
+
+h2 {
+    font-size: var(--fz-h2);
+}
+
+h3 {
+    font-size: var(--fz-h3);
+}
+
+h4 {
+    font-size: var(--fz-h4);
+}
+
+.text-small {
+    font-size: var(--fz-sm);
+}
