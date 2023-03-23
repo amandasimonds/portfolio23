@@ -1,6 +1,35 @@
+@import '../styles/responsive.scss';
+
+.navigation-shortcut {
+    display: none;
+
+    @include respond(tablet) {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+    }
+}
+
 .navigation {
-    padding: 0 1rem;
+    padding: 3rem 1rem;
     height: 100%;
+
+    @include respond(tablet) {
+        position: absolute;
+        left: -150px;
+        transition-property: left;
+        transition-duration: .5s ;
+        transition-timing-function: ease-in-out;
+        z-index: 100;
+        background-color: var(--apl-color-blue);
+    }
+}
+
+.navigation-menu-open {
+    left: 0;
+    transition-property: left;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
 }
 
 .logo {
