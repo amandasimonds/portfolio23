@@ -1,8 +1,10 @@
-<div class="navigation-shortcut">
-    <app-button (click)="toggleMobileNavMenu()"> nav </app-button>
+<div class="navigation-shortcut flex align-items-center">
+    <app-button (click)="toggleMobileNavMenu()">
+        <app-svg [svg]=" navMenuOpen ? 'close' : 'menu'"></app-svg>
+    </app-button>
 </div>
 <div
-    class="flex gap-md align-items-center navigation position-relative "
+    class="flex gap-md align-items-center navigation position-relative"
     [class.navigation-menu-open]="navMenuOpen"
 >
     <a href="#home">

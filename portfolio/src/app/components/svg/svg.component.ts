@@ -1,8 +1,8 @@
-import { Component, Input, TemplateRef } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
     selector: 'app-svg',
-    templateUrl: './svg.component.svg',
+    templateUrl: './svg.component.html',
     styleUrls: ['./svg.component.scss'],
 })
 export class SvgComponent {

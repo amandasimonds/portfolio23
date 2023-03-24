@@ -16,7 +16,7 @@
 
     @include respond(tablet) {
         position: absolute;
-        left: -150px;
+        left: -175px;
         transition-property: left;
         transition-duration: .5s ;
         transition-timing-function: ease-in-out;
