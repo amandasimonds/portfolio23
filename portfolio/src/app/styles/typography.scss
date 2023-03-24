@@ -29,6 +29,9 @@ h1 {
 
 h2 {
     font-size: var(--fz-h2);
+    @include respond(tablet) {
+        font-size: var(--fz-xl);
+    }
 }
 
 h3 {

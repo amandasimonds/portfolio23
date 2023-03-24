@@ -1,1 +1,15 @@
 <h2>Some things I've built</h2>
+<div class="project-container" *ngFor="let project of projects">
+    <h4>{{ project.title }}</h4>
+    <img [src]="project.img" alt="" />
+    <p>{{ project.description }}</p>
+    <div>
+        Tech:
+        <div class="flex gap-xs">
+            <span *ngFor="let item of project.tech">- {{ item }}</span>
+        </div>
+    </div>
+    <a [href]="project.github">
+        <img class="svg" src="../../../assets/icons/github.svg" alt="">
+    </a>
+</div>

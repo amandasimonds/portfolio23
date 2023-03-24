@@ -23,4 +23,8 @@
         background-color: #131e7f66;
         // border: 1px solid rgba(128, 12#131d7f8, 128, 0.282);
     }
+
+    @include respond(tablet) {
+        padding: 1rem;
+    }
 }
