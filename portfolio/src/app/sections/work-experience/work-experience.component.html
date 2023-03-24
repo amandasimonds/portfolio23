@@ -1,3 +1,14 @@
 <h2>Where I've worked</h2>
+<div class="project-container" *ngFor="let item of experience">
+    <h4>{{ item.title }}</h4>
+    <a [href]="item.companyLink">
+        <p>{{ item.company }}</p>
+    </a>
+    <div>
+        <div class="flex gap-xs">
+            <span *ngFor="let item of item.duties">- {{ item }}</span>
+        </div>
+    </div>
+</div>
 
 

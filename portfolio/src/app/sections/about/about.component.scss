@@ -3,17 +3,28 @@
 .profile {
     min-width: 34%;
     max-width: 100px;
-    border-radius: 50%;
-    filter: contrast(1.4);
-    opacity: 0.6;
-    transition: opacity ease-in-out 0.5s;
     position: relative;
     z-index: 4;
     right: -74px;
     top: -116px;
+    border-radius: 50%;
+    overflow: hidden;
 
-    &:hover {
-        opacity: 0.9;
+    &::before {
+        content: '';
+        background-color: var(--apl-color-blue);
+        position: absolute;
+        inset: 0;
+    }
+
+    &-img {
+        filter: contrast(1.6);
+        opacity: 0.7;
+        transition: opacity ease-in-out 0.5s;
+
+        &:hover {
+            opacity: 0.9;
+        }
     }
 
     @include respond(tablet) {
