@@ -12,6 +12,7 @@ import { WorkExperienceComponent } from './sections/work-experience/work-experie
 import { FooterComponent } from './sections/footer/footer.component';
 import { WorkComponent } from './sections/work/work.component';
 import { SvgComponent } from './components/svg/svg.component';
+import { TabComponent } from './components/tab/tab.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SvgComponent } from './components/svg/svg.component';
     WorkExperienceComponent,
     FooterComponent,
     WorkComponent,
-    SvgComponent
+    SvgComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,

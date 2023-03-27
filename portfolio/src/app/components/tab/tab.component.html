@@ -1,0 +1,10 @@
+<div class="tab-container">
+    <span
+        class="tab-item"
+        *ngFor="let tab of tabsArray; let i = index"
+        [ngClass]="activatedTab == i ? 'tab-item-active' : null"
+        (click)="setTab(i)"
+    >
+        {{ tab }}
+    </span>
+</div>

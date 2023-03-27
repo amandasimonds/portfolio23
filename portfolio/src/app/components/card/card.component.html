@@ -1,3 +1,7 @@
-<div class="card" [ngClass]="getCardStyle">
+<div
+    class="card"
+    [ngClass]="getCardStyle"
+    [ngStyle]="{ width: width, height: height }"
+>
     <ng-content></ng-content>
 </div>
