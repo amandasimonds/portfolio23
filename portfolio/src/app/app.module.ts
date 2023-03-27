@@ -11,6 +11,7 @@ import { AboutComponent } from './sections/about/about.component';
 import { WorkExperienceComponent } from './sections/work-experience/work-experience.component';
 import { FooterComponent } from './sections/footer/footer.component';
 import { WorkComponent } from './sections/work/work.component';
+import { SvgComponent } from './components/svg/svg.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,12 @@ import { WorkComponent } from './sections/work/work.component';
     AboutComponent,
     WorkExperienceComponent,
     FooterComponent,
-    WorkComponent
+    WorkComponent,
+    SvgComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
