@@ -51,12 +51,22 @@ a:hover,
 a:active,
 a:visited {
     font: inherit;
-    color: inherit;
+    color: var(--apl-color-secondary-default);
     text-decoration: inherit;
 
     &:hover {
+        color: var(--apl-color-secondary-hover);
+        text-decoration: underline;
         svg {
-            color: var(--apl-color-primary-hover);
+            color: var(--apl-color-secondary-hover);
         }
+    }
+}
+
+button {
+    a {
+        font: inherit;
+        color: inherit !important;
+        text-decoration: inherit;
     }
 }

@@ -18,4 +18,14 @@ export const Experience = [
             'Set up platform on AWS and Terraform'
         ]
     },
+    {
+        title: 'Code Sensei',
+        company: 'Code Ninjas',
+        companyLink: 'https://codeninjas.com/',
+        date: 'July 2020 - October 2020',
+        duties: [
+            'Provide students with coding problems on and off the curriculum that challenge their problem solving skills',
+            'Innovate new coding challenges and instruct on Javascript, HTML, CSS, and Python coding'
+        ]
+    },
 ]
