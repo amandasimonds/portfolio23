@@ -15,13 +15,13 @@
 <div class="flex wrapper flex-column">
     <app-navigation></app-navigation>
     <div class="container main-content">
-        <section id="home">
+        <section id="home" >
             <app-intro></app-intro>
         </section>
-        <section id="about">
+        <section id="about" (scrollAnimation)="onAppear()">
             <app-about></app-about>
         </section>
-        <section id="experience">
+        <section id="experience" (scrollAnimation)="onAppear()">
             <app-work-experience></app-work-experience>
         </section>
         <section>
