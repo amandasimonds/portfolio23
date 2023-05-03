@@ -9,6 +9,7 @@ export class CardComponent {
     @Input() cardStyle: '' | 'primary' | 'glass' | 'glow' = '';
     @Input() width = '';
     @Input() height = '';
+    @Input() padding = '';
     public get getCardStyle(): string {
         return `card-${this.cardStyle}`
     }

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  public showMoreAboutMeIsOpen = false;
+
+  public toggleShowMoreAboutMe() {
+    this.showMoreAboutMeIsOpen = !this.showMoreAboutMeIsOpen;
+  }
 }

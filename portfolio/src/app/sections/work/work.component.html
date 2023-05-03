@@ -1,15 +1,31 @@
 <h2>Some things I've built</h2>
 <div class="project-container" *ngFor="let project of projects">
-    <h4>{{ project.title }}</h4>
-    <img [src]="project.img" alt="" />
-    <p>{{ project.description }}</p>
-    <div>
-        Tech:
-        <div class="flex gap-xs">
-            <span *ngFor="let item of project.tech">- {{ item }}</span>
-        </div>
+    <h4 class="text-highlight">{{ project.title }}</h4>
+    <div class="flex align-items-center">
+        <app-card cardStyle="glass" padding="2rem" width="500px">
+            <div class="flex align-items-center project-content">
+                <div>
+                    <p>{{ project.description }}</p>
+                    <div>
+                        <div
+                            class="flex gap-xs align-items-center margin-top-sm"
+                        >
+                            <a [href]="project.github" target="_blank">
+                                <app-svg svg="github"></app-svg>
+                            </a>
+                            |
+                            <span
+                                class="text-secondary"
+                                *ngFor="let item of project.tech"
+                                >{{ item }}</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </app-card>
+        <a [href]="project.link" target="_blank">
+            <img [src]="project.img" alt="" class="project-img" />
+        </a>
     </div>
-    <a [href]="project.github">
-        <img class="svg" src="../../../assets/icons/github.svg" alt="">
-    </a>
 </div>

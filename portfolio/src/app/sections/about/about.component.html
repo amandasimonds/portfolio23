@@ -1,31 +1,42 @@
 <app-card cardStyle="primary">
-    <h2>About Me</h2>
-    <div
-        class="text-container flex justify-content-space-between align-items-center"
-    >
+    <div class="flex justify-content-space-between align-items-center w-100">
         <div>
+            <h2>Hi! I'm Amanda.</h2>
+            <h4>
+                a design-minded
+                <span class="text-highlight">front-end engineer.</span>
+            </h4>
             <p>
-                Hello! My name is Amanda and I love to create beautiful digital
-                experiences.
+                I build (and occasionally design) exceptional user experiences,
+                from the design-development workflow, to component libraries, to
+                the front end.
             </p>
         </div>
         <div class="profile">
             <img class="profile-img" src="../../../assets/profile-22.jpg" />
         </div>
     </div>
-    <p>
-        My interest in web development started back in 2007, when I was creating
-        custom MySpace and blog layouts with HTML/CSS. After spending some time
-        as a design student and art teacher, I decided to try combining my
-        visual skills with web development, and turns out, that's a really good
-        combo!
-    </p>
+    <div
+        class="text-container flex justify-content-space-between align-items-center"
+    ></div>
+    <app-button (click)="toggleShowMoreAboutMe()">
+            {{showMoreAboutMeIsOpen ? 'show less' : 'show more about me...'}}
+    </app-button>
+    <div class="about-me-background" [class.about-me-background-open]="showMoreAboutMeIsOpen">
+        <p>
+            My interest in web development started back in 2007, when I was
+            creating custom MySpace and blog layouts with HTML/CSS. After
+            spending some time as a design student and art teacher, I decided to
+            try combining my visual skills with web development, and turns out,
+            that's a really good combo!
+        </p>
 
-    <p>
-        With a visually detail oriented, and problem solving mind, I am
-        passionate about creating efficieny in design-development processes that
-        result in exceptional user experiences. In my current role, I've led the
-        fight for consistent UI with a well-documented component library, and
-        contribution process.
-    </p>
+        <p class="margin-top-sm">
+            With a visually detail oriented, and problem solving mind, I am
+            passionate about creating efficieny in design-development processes
+            that result in exceptional user experiences. In my current role,
+            I've led the fight for consistent UI with a well-documented
+            component library, and contribution process.
+        </p>
+    </div>
 </app-card>
