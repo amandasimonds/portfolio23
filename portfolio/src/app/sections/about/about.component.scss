@@ -1,12 +1,9 @@
 @import '../../styles/responsive.scss';
 
 .profile {
-    min-width: 34%;
-    max-width: 100px;
+    max-width: 200px;
     position: relative;
     z-index: 4;
-    right: -74px;
-    top: -116px;
     border-radius: 50%;
     overflow: hidden;
 
@@ -33,12 +30,19 @@
     }
 }
 
-.text-container {
-    position: relative;
-    top: -10px;
-    height: 66px;
-
-    @include respond(tablet) {
-        height: auto;
+.about-me-background {
+    height: 0;
+    opacity: 0;
+    transition: opacity 0s ease-in-out 0s, height 0.3s ease-in-out 0s;
+    p {
+        display: none;
+    }
+    &-open {
+        height: 100%;
+        opacity: 1;
+        transition: opacity 0s ease-in-out 0.3s, height 0.3s ease-in-out 0s;
+        p {
+            display: block;
+        }
     }
 }

@@ -1,5 +1,22 @@
+@import '../../styles/mixins.scss';
+
 .project {
     &-container {
         padding: 1rem;
+    }
+
+    &-img {
+        @include image-hover-style;
+        height: 300px;
+        width: 600px;
+        object-fit: cover;
+        position: relative;
+        left: -30px;
+    }
+
+    &-content {
+        position: relative;
+        padding: 1rem;
+        font-size: var(--fz-lg);
     }
 }

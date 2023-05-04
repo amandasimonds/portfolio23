@@ -40,10 +40,18 @@ h3 {
 
 h4 {
     font-size: var(--fz-h4);
+    @include respond(tablet) {
+        font-size: var(--fz-lg);
+    }
 }
 
 .text-small {
     font-size: var(--fz-sm);
+}
+
+.text-secondary {
+    font-family: 'Trebuchet MS', sans-serif;
+    size: var(--fz-sm);
 }
 
 a,
@@ -69,4 +77,8 @@ button {
         color: inherit !important;
         text-decoration: inherit;
     }
+}
+
+.text-highlight {
+    color: var(--apl-color-secondary-default)
 }
