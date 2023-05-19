@@ -20,12 +20,12 @@
         class="text-container flex justify-content-space-between align-items-center"
     ></div>
     <app-button (click)="toggleShowMoreAboutMe()">
-            {{showMoreAboutMeIsOpen ? 'show less' : 'show more about me...'}}
+            {{showMoreAboutMeIsOpen ? 'collapse' : 'more about me...'}}
     </app-button>
     <div class="about-me-background" [class.about-me-background-open]="showMoreAboutMeIsOpen">
         <p>
-            My interest in web development started back in 2007, when I was
-            creating custom MySpace and blog layouts with HTML/CSS. After
+            My interest in web development started in 2007, when I was
+            creating custom blog layouts with HTML/CSS. After
             spending some time as a design student and art teacher, I decided to
             try combining my visual skills with web development, and turns out,
             that's a really good combo!
@@ -33,7 +33,7 @@
 
         <p class="margin-top-sm">
             With a visually detail oriented, and problem solving mind, I am
-            passionate about creating efficieny in design-development processes
+            passionate about creating efficiency in design-development processes
             that result in exceptional user experiences. In my current role,
             I've led the fight for consistent UI with a well-documented
             component library, and contribution process.
