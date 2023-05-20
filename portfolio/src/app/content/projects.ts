@@ -1,6 +1,7 @@
 export const Projects = [
     {
         title: 'Platform Prototype',
+        featuredProject: true,
         github: 'https://github.com/amandasimonds/data-platform-prototype-1',
         link: 'https://amandasimonds.github.io/data-platform-prototype-1',
         img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1684535938/data-platform-prototype_v0umd9.png',
@@ -13,6 +14,7 @@ export const Projects = [
     },
     {
         title: 'Aurora Pattern Library',
+        featuredProject: true,
         github: 'https://github.com/amandasimonds',
         link: 'https://amandaxandra.netlify.app/',
         img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1683134405/portfolio-screenshot_fa6i9q.png',
@@ -26,6 +28,20 @@ export const Projects = [
     },
     {
         title: 'Stream Ed',
+        featuredProject: true,
+        github: 'https://github.com/amandasimonds/stream-ed',
+        link: 'https://amandasimonds.github.io/stream-ed/#/',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1683134405/portfolio-screenshot_fa6i9q.png',
+        description: 'App for Remote Education',
+        tech: [
+            'React',
+            'JavaScript',
+            'SCSS',
+        ]
+    },
+    {
+        title: 'My Figma Workspace',
+        featuredProject: false,
         github: 'https://github.com/amandasimonds/stream-ed',
         link: 'https://amandasimonds.github.io/stream-ed/#/',
         img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1683134405/portfolio-screenshot_fa6i9q.png',
