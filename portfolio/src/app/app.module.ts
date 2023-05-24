@@ -13,6 +13,7 @@ import { FooterComponent } from './sections/footer/footer.component';
 import { WorkComponent } from './sections/work/work.component';
 import { SvgComponent } from './components/svg/svg.component';
 import { TabComponent } from './components/tab/tab.component';
+import { MoreWorkComponent } from './sections/more-work/more-work.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TabComponent } from './components/tab/tab.component';
     FooterComponent,
     WorkComponent,
     SvgComponent,
-    TabComponent
+    TabComponent,
+    MoreWorkComponent
   ],
   imports: [
     BrowserModule,

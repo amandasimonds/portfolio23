@@ -1,6 +1,7 @@
 export const Projects = [
     {
         title: 'Platform Prototype',
+        featuredProject: true,
         github: 'https://github.com/amandasimonds/data-platform-prototype-1',
         link: 'https://amandasimonds.github.io/data-platform-prototype-1',
         img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1684535938/data-platform-prototype_v0umd9.png',
@@ -13,19 +14,35 @@ export const Projects = [
     },
     {
         title: 'Aurora Pattern Library',
-        github: 'https://github.com/amandasimonds',
-        link: 'https://amandaxandra.netlify.app/',
-        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1683134405/portfolio-screenshot_fa6i9q.png',
-        description: 'Angular component library',
+        featuredProject: true,
+        github: 'https://github.com/amandasimonds/aurora-component-library',
+        link: 'https://aurora-ui-kit.netlify.app/',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1684893044/aurora-lib-screenshot_qmlkwt.png',
+        description: `Angular component library, displayed through Storybook. I conceptualized the design system for this library in Figma, and experimented with design tokens and Style Dictionary to create the color variables straight from Figma. The library is built in Angular, and displayed/documented in Storybook. `,
         tech: [
             'Angular',
             'Typescript',
             'SCSS',
-            'Storybook'
+            'Storybook',
+            'Figma'
         ]
     },
     {
         title: 'Stream Ed',
+        featuredProject: true,
+        github: 'https://github.com/amandasimonds/stream-ed',
+        link: 'https://amandasimonds.github.io/stream-ed/#/',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1683134405/portfolio-screenshot_fa6i9q.png',
+        description: 'App for Remote Education',
+        tech: [
+            'React',
+            'JavaScript',
+            'SCSS',
+        ]
+    },
+    {
+        title: 'My Figma Workspace',
+        featuredProject: false,
         github: 'https://github.com/amandasimonds/stream-ed',
         link: 'https://amandasimonds.github.io/stream-ed/#/',
         img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1683134405/portfolio-screenshot_fa6i9q.png',
