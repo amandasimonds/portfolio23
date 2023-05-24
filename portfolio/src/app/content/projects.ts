@@ -15,15 +15,16 @@ export const Projects = [
     {
         title: 'Aurora Pattern Library',
         featuredProject: true,
-        github: 'https://github.com/amandasimonds',
-        link: 'https://amandaxandra.netlify.app/',
-        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1683134405/portfolio-screenshot_fa6i9q.png',
-        description: 'Angular component library',
+        github: 'https://github.com/amandasimonds/aurora-component-library',
+        link: 'https://aurora-ui-kit.netlify.app/',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1684893044/aurora-lib-screenshot_qmlkwt.png',
+        description: `Angular component library, displayed through Storybook. I conceptualized the design system for this library in Figma, and experimented with design tokens and Style Dictionary to create the color variables straight from Figma. The library is built in Angular, and displayed/documented in Storybook. `,
         tech: [
             'Angular',
             'Typescript',
             'SCSS',
-            'Storybook'
+            'Storybook',
+            'Figma'
         ]
     },
     {
