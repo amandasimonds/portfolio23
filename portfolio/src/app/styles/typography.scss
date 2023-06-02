@@ -13,7 +13,7 @@ html {
 body {
     color: var(--apl-text-body-color);
     font-weight: 100;
-    font-size: var(--fz-xl);
+    font-size: var(--fz-md);
 
     @include respond(tablet) {
         font-size: var(--fz-md);
@@ -23,14 +23,14 @@ body {
 h1 {
     font-size: var(--fz-h1);
     @include respond(tablet) {
-        font-size: var(--fz-xl);
+        font-size: var(--fz-h3);
     }
 }
 
 h2 {
     font-size: var(--fz-h2);
     @include respond(tablet) {
-        font-size: var(--fz-xl);
+        font-size: var(--fz-h4);
     }
 }
 
@@ -42,6 +42,16 @@ h4 {
     font-size: var(--fz-h4);
     @include respond(tablet) {
         font-size: var(--fz-lg);
+    }
+}
+
+h6 {
+    font-size: var(--fz-h6);
+    line-height: var(--fz-h4);
+    font-weight: 100;
+    @include respond(tablet) {
+        font-size: var(--fz-md);
+        line-height: var(--fz-xl);
     }
 }
 
@@ -61,10 +71,14 @@ a:visited {
     font: inherit;
     color: var(--apl-color-secondary-default);
     text-decoration: inherit;
+    transition: all 0.25s;
 
     &:hover {
         color: var(--apl-color-secondary-hover);
         text-decoration: inherit;
+        transform: translateY(-2px);
+        transition: all 0.25s;
+
         svg {
             color: var(--apl-color-secondary-hover);
         }
@@ -77,8 +91,12 @@ button {
         color: inherit !important;
         text-decoration: inherit;
     }
+    transition: inherit;
 }
 
 .text-highlight {
-    color: var(--apl-color-secondary-default)
+    color: var(--apl-color-secondary-default);
+    &:hover {
+        color: inherit;
+    }
 }

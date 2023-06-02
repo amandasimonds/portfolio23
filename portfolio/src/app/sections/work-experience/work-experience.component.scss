@@ -1,0 +1,20 @@
+@import '../../styles/responsive.scss';
+
+.tab-container {
+    @include respond(tablet) {
+        display: none;
+    }
+}
+
+.work-content-container {
+    @include respond(tablet) {
+        display: none;
+    }
+    &-mobile {
+        display: none;
+        @include respond(tablet) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

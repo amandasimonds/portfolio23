@@ -1,16 +1,16 @@
 <app-card cardStyle="primary">
-    <div class="flex justify-content-space-between align-items-center w-100">
+    <div class="container">
         <div>
             <h2>Hi! I'm Amanda.</h2>
             <h4>
                 a design-minded
                 <span class="text-highlight">front-end engineer.</span>
             </h4>
-            <p>
+            <h6>
                 I build (and occasionally design) exceptional user experiences,
                 from the design-development workflow, to component libraries, to
                 the front end.
-            </p>
+            </h6>
         </div>
         <div class="profile">
             <img class="profile-img" src="../../../assets/profile-22.jpg" />
@@ -20,7 +20,7 @@
         class="text-container flex justify-content-space-between align-items-center"
     ></div>
     <app-button (click)="toggleShowMoreAboutMe()">
-            {{showMoreAboutMeIsOpen ? 'collapse' : 'more about me...'}}
+            {{showMoreAboutMeIsOpen ? 'thanks for reading! ^' : 'more about me...'}}
     </app-button>
     <div class="about-me-background" [class.about-me-background-open]="showMoreAboutMeIsOpen">
         <p>

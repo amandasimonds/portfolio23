@@ -1,22 +1,58 @@
 @import '../../styles/mixins.scss';
+@import '../../styles//responsive.scss';
 
 .project {
     &-container {
-        padding: 1rem;
+        padding: 1rem 0;
     }
 
     &-img {
         @include image-hover-style;
-        height: 300px;
+        height: 400px;
         width: 600px;
+        border-radius: 10px;
         object-fit: cover;
         position: relative;
-        left: -30px;
+
+        &:hover {
+            box-shadow: 100px black;
+        }
+
+        @include respond(tablet) {
+            width: 100%;
+            height: 200px;
+        }
     }
 
     &-content {
         position: relative;
         padding: 1rem;
-        font-size: var(--fz-lg);
+        display: flex;
+        align-items: center;
+
+        @include respond(tablet) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    &-description {
+        width: 43%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        @include respond(tablet) {
+            width: 100%;
+            padding: .5rem;
+        }
+    }
+
+    &-tech {
+        display: flex;
+        gap: .75rem;
+        flex-wrap: wrap;
     }
 }

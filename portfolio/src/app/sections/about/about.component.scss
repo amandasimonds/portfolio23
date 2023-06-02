@@ -1,11 +1,25 @@
 @import '../../styles/responsive.scss';
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include respond(tablet) {
+        flex-direction: column;
+    }
+}
+
 .profile {
     max-width: 200px;
     position: relative;
     z-index: 4;
     border-radius: 50%;
     overflow: hidden;
+
+    @include respond(tablet) {
+        width: 50%;
+    }
 
     &::before {
         content: '';

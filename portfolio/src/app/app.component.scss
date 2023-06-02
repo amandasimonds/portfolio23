@@ -31,11 +31,11 @@
 
 section {
     padding: 4rem 3rem 10rem 3rem;
-    width: 70%;
+    width: 75%;
     margin: auto;
 
     @include respond(tablet) {
-        padding: 0.5rem;
+        padding: 4rem 0.5rem;
         width: 100%;
     }
 }

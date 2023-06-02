@@ -1,6 +1,6 @@
 <div class="navigation-shortcut flex align-items-center">
     <app-button (click)="toggleMobileNavMenu()">
-        <app-svg [svg]=" navMenuOpen ? 'close' : 'menu'"></app-svg>
+        <app-svg [svg]="navMenuOpen ? 'close' : 'menu'"></app-svg>
     </app-button>
 </div>
 <div
@@ -26,9 +26,33 @@
             </svg>
         </div>
     </a>
-    <app-button><a href="#about">about</a></app-button>
-    <app-button><a href="#experience">experience</a></app-button>
-    <app-button><a href="#work">work</a></app-button>
-    <app-button>contact</app-button>
-    <app-button><a href="../../assets/AmandaSimondsResume2023.pdf">resume</a></app-button>
+    <app-button (click)="toggleMobileNavMenu()"
+        ><a href="#about">about</a></app-button
+    >
+    <app-button (click)="toggleMobileNavMenu()"
+        ><a href="#experience">experience</a></app-button
+    >
+    <app-button (click)="toggleMobileNavMenu()"
+        ><a href="#work">work</a></app-button
+    >
+
+    <app-button (click)="toggleMobileNavMenu()"
+        ><a href="../../assets/AmandaSimondsResume2023.pdf"
+            >resume</a
+        ></app-button
+    >
+    <a
+        href="https://www.linkedin.com/in/amandasimonds/"
+        (click)="toggleMobileNavMenu()"
+        target="_blank"
+    >
+        <app-svg svg="linkedin"></app-svg>
+    </a>
+    <a
+        href="https://github.com/amandasimonds"
+        (click)="toggleMobileNavMenu()"
+        target="_blank"
+    >
+        <app-svg svg="github"></app-svg>
+    </a>
 </div>
