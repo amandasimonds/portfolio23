@@ -20,7 +20,8 @@
     }
 
     &-glass {
-        background-color: #131e7f66;
+        background-color: #131e7f84;
+        backdrop-filter: blur(10px);
         // border: 1px solid rgba(128, 12#131d7f8, 128, 0.282);
     }
 
