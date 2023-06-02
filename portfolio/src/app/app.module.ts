@@ -14,6 +14,7 @@ import { WorkComponent } from './sections/work/work.component';
 import { SvgComponent } from './components/svg/svg.component';
 import { TabComponent } from './components/tab/tab.component';
 import { MoreWorkComponent } from './sections/more-work/more-work.component';
+import { ChipComponent } from './components/chip/chip.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MoreWorkComponent } from './sections/more-work/more-work.component';
     WorkComponent,
     SvgComponent,
     TabComponent,
-    MoreWorkComponent
+    MoreWorkComponent,
+    ChipComponent
   ],
   imports: [
     BrowserModule,

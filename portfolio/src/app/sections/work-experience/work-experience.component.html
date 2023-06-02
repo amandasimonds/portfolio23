@@ -13,11 +13,11 @@
                 <p>{{ activatedExperience.company }}</p>
             </a>
             <div>
-                <div class="flex gap-xs flex-column">
-                    <span *ngFor="let item of activatedExperience.duties"
-                        >- {{ item }}</span
+                <ul class="flex gap-xs flex-column">
+                    <li *ngFor="let item of activatedExperience.duties"
+                        >{{ item }}</li
                     >
-                </div>
+                </ul>
             </div>
         </app-card>
     </div>

@@ -8,11 +8,9 @@
                         <a
                             [href]="project.link"
                             target="_blank"
-                            class="flex align-items-center margin-bottom-sm "
+                            class="flex align-items-center margin-bottom-sm"
                         >
-                            <h4
-                                class="text-highlight margin-right-sm"
-                            >
+                            <h4 class="text-highlight margin-right-sm">
                                 {{ project.title }}
                             </h4>
                             <app-svg svg="link"></app-svg>
@@ -33,11 +31,9 @@
                             </a>
                         </div>
                         <div class="project-tech margin-top-sm">
-                            <span
-                                class="text-secondary flex"
-                                *ngFor="let item of project.tech"
-                                >{{ item }}</span
-                            >
+                            <app-chip *ngFor="let item of project.tech">{{
+                                item
+                            }}</app-chip>
                         </div>
                     </div>
                     <div></div>

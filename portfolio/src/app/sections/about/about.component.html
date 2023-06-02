@@ -11,6 +11,9 @@
                 from the design-development workflow, to component libraries, to
                 the front end.
             </h6>
+            <div class="flex gap-xs flex-wrap align-items-center">
+                <app-chip *ngFor="let item of techSkills">{{item}}</app-chip>
+            </div>
         </div>
         <div class="profile">
             <img class="profile-img" src="../../../assets/profile-22.jpg" />

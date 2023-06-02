@@ -8,7 +8,7 @@ export const Projects = [
         description: 'High fidelity prototype of a data platform application. I built this prototype for testing usability and workflow with the design team. It was also used by Product Owners and others in the organization as a tool for showing the end-goal of the huge data platform our team was working towards. This project marks a turning point in my development as a front-end engineer, and the value I aim to bring to the future teams I join.',
         tech: [
             'Angular',
-            'Typescript',
+            'TypeScript',
             'SCSS'
         ]
     },
@@ -22,7 +22,7 @@ export const Projects = [
         description: `Angular component library, displayed through Storybook. I conceptualized the design system for this library in Figma, and experimented with design tokens and Style Dictionary to create the color variables straight from Figma. The library is built in Angular, and displayed/documented in Storybook. `,
         tech: [
             'Angular',
-            'Typescript',
+            'TypeScript',
             'SCSS',
             'Storybook',
             'Figma'
