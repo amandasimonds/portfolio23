@@ -1,15 +1,39 @@
 <h2>Where I've worked</h2>
 <div class="flex margin-top-md">
-    <app-tab [tabsArray]="getExperienceTitles" (onTabChange)="tabChangeEvent($event)"></app-tab>
-    <app-card cardStyle="glass" width="40vw" height="400px">
-        <h4>{{ activatedExperience.title }}</h4>
-        <a [href]="activatedExperience.companyLink">
-            <p>{{ activatedExperience.company }}</p>
-        </a>
-        <div>
-            <div class="flex gap-xs">
-                <span *ngFor="let item of activatedExperience.duties">- {{ item }}</span>
+    <div class="tab-container">
+        <app-tab
+            [tabsArray]="getExperienceTitles"
+            (onTabChange)="tabChangeEvent($event)"
+        ></app-tab>
+    </div>
+    <div class="work-content-container">
+        <app-card cardStyle="glass" height="400px">
+            <h4>{{ activatedExperience.title }}</h4>
+            <a [href]="activatedExperience.companyLink">
+                <p>{{ activatedExperience.company }}</p>
+            </a>
+            <div>
+                <div class="flex gap-xs flex-column">
+                    <span *ngFor="let item of activatedExperience.duties"
+                        >- {{ item }}</span
+                    >
+                </div>
             </div>
-        </div>
-    </app-card>
+        </app-card>
+    </div>
+    <div class="work-content-container-mobile gap-xs">
+        <app-card cardStyle="glass" *ngFor="let item of experience">
+            <h4>{{ item.title }}</h4>
+            <a [href]="item.companyLink">
+                <p>{{ item.company }}</p>
+            </a>
+            <div>
+                <div class="flex gap-xs flex-column">
+                    <span *ngFor="let item of item.duties"
+                        >- {{ item }}</span
+                    >
+                </div>
+            </div>
+        </app-card>
+    </div>
 </div>

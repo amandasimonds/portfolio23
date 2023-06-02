@@ -1,0 +1,10 @@
+.project-container {
+    border: 2px solid blue;
+    display: flex;
+    width: min-content;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}

@@ -13,10 +13,11 @@ export const Projects = [
         ]
     },
     {
-        title: 'Aurora Pattern Library',
+        title: 'Aurora UI Library',
         featuredProject: true,
         github: 'https://github.com/amandasimonds/aurora-component-library',
         link: 'https://aurora-ui-kit.netlify.app/',
+        figma: 'https://www.figma.com/file/ZabTcaDSrmzP7WdV7xgn8s/Aurora-Brainstorm?type=design&node-id=63%3A148&t=ibxbte5dgprXiQKH-1',
         img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1684893044/aurora-lib-screenshot_qmlkwt.png',
         description: `Angular component library, displayed through Storybook. I conceptualized the design system for this library in Figma, and experimented with design tokens and Style Dictionary to create the color variables straight from Figma. The library is built in Angular, and displayed/documented in Storybook. `,
         tech: [
@@ -28,8 +29,23 @@ export const Projects = [
         ]
     },
     {
-        title: 'Stream Ed',
+        title: 'Wedding Website',
         featuredProject: true,
+        github: 'https://github.com/amandasimonds/brannocks-at-the-disco',
+        link: 'https://amanda-and-ben.netlify.app',
+        figma: 'https://www.figma.com/file/lP3hSN5sXia8Tgk3i0HCQd/Wedding-Website?type=design&node-id=0%3A1&t=tEOvBZ8injowTPwA-1',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1685553374/weddingwebsite_dgwsua.png',
+        description: `I'm getting married, so I built my own wedding website with React! I used this project to refresh my knowledge of React, continue practicing with Figma (I even made the A&B logo), and use some load-in animations. I also learned to use Google search controls to make the website searchable for wedding guest who are searching for the website`,
+        tech: [
+            'React',
+            'JavaScript',
+            'SCSS',
+            'Figma'
+        ]
+    },
+    {
+        title: 'Stream Ed',
+        featuredProject: false,
         github: 'https://github.com/amandasimonds/stream-ed',
         link: 'https://amandasimonds.github.io/stream-ed/#/',
         img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1683134405/portfolio-screenshot_fa6i9q.png',

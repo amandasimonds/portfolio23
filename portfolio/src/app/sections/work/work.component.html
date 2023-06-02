@@ -1,33 +1,51 @@
 <h2>What I've built</h2>
 <ng-container *ngFor="let project of projects">
     <div class="project-container" *ngIf="project.featuredProject">
-        <h4 class="text-highlight">{{ project.title }}</h4>
-        <div class="flex align-items-center">
-            <app-card cardStyle="glass" padding="2rem" width="500px">
-                <div class="flex align-items-center project-content">
-                    <div>
-                        <p>{{ project.description }}</p>
-                        <div>
-                            <div
-                                class="flex gap-xs align-items-center margin-top-sm"
+        <app-card cardStyle="glass" padding="1rem">
+            <div class="project-content">
+                <div class="project-description">
+                    <div class="flex flex-column">
+                        <a
+                            [href]="project.link"
+                            target="_blank"
+                            class="flex align-items-center margin-bottom-sm "
+                        >
+                            <h4
+                                class="text-highlight margin-right-sm"
                             >
-                                <a [href]="project.github" target="_blank">
-                                    <app-svg svg="github"></app-svg>
-                                </a>
-                                |
-                                <span
-                                    class="text-secondary"
-                                    *ngFor="let item of project.tech"
-                                    >{{ item }}</span
-                                >
-                            </div>
+                                {{ project.title }}
+                            </h4>
+                            <app-svg svg="link"></app-svg>
+                        </a>
+                        <span>{{ project.description }}</span>
+                    </div>
+                    <div class="flex flex-column margin-top-sm">
+                        <div class="flex gap-xs">
+                            <a [href]="project.github" target="_blank">
+                                <app-svg svg="github"></app-svg>
+                            </a>
+                            <a
+                                *ngIf="project.figma"
+                                [href]="project.figma"
+                                target="_blank"
+                            >
+                                <app-svg svg="figma"></app-svg>
+                            </a>
+                        </div>
+                        <div class="project-tech margin-top-sm">
+                            <span
+                                class="text-secondary flex"
+                                *ngFor="let item of project.tech"
+                                >{{ item }}</span
+                            >
                         </div>
                     </div>
+                    <div></div>
                 </div>
-            </app-card>
-            <a [href]="project.link" target="_blank">
-                <img [src]="project.img" alt="" class="project-img" />
-            </a>
-        </div>
+                <a [href]="project.link" target="_blank">
+                    <img [src]="project.img" alt="" class="project-img" />
+                </a>
+            </div>
+        </app-card>
     </div>
 </ng-container>

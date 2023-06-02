@@ -35,7 +35,7 @@ section {
     margin: auto;
 
     @include respond(tablet) {
-        padding: 0.5rem;
+        padding: 4rem 0.5rem;
         width: 100%;
     }
 }
