@@ -9,9 +9,14 @@
     <div class="work-content-container">
         <app-card cardStyle="glass" height="400px">
             <h4>{{ activatedExperience.title }}</h4>
-            <a [href]="activatedExperience.companyLink">
-                <p>{{ activatedExperience.company }}</p>
-            </a>
+            <div class="flex align-items-center gap-xs">
+                <a [href]="activatedExperience.companyLink">
+                    <p>{{ activatedExperience.company }}</p>
+                </a>
+                <p class="text-small">
+                    {{activatedExperience.date}} 
+                </p>
+            </div>
             <div>
                 <ul class="flex gap-xs flex-column">
                     <li *ngFor="let item of activatedExperience.duties"
