@@ -49,6 +49,7 @@ h6 {
     font-size: var(--fz-h6);
     line-height: var(--fz-h4);
     font-weight: 100;
+    margin: .25rem;
     @include respond(tablet) {
         font-size: var(--fz-md);
         line-height: var(--fz-xl);

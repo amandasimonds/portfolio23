@@ -44,12 +44,25 @@ export const Projects = [
         ]
     },
     {
+        title: 'Genetic Username',
+        featuredProject: false,
+        github: 'https://github.com/amandasimonds/genetic-username',
+        link: 'https://amandasimonds.github.io/genetic-username/',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1687991410/genetic-username_zumqq7.png',
+        description: 'Username Generator inspired by Reddit, and my desire to do a fun day project building a vanilla JavaScript app.',
+        tech: [
+            'HTML',
+            'JavaScript',
+            'SCSS',
+        ]
+    },
+    {
         title: 'Stream Ed',
         featuredProject: false,
         github: 'https://github.com/amandasimonds/stream-ed',
         link: 'https://amandasimonds.github.io/stream-ed/#/',
-        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1683134405/portfolio-screenshot_fa6i9q.png',
-        description: 'App for Remote Education',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1688004962/streamed_lvqmia.png',
+        description: 'App for remote education.',
         tech: [
             'React',
             'JavaScript',
@@ -59,14 +72,12 @@ export const Projects = [
     {
         title: 'My Figma Workspace',
         featuredProject: false,
-        github: 'https://github.com/amandasimonds/stream-ed',
-        link: 'https://amandasimonds.github.io/stream-ed/#/',
-        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1683134405/portfolio-screenshot_fa6i9q.png',
-        description: 'App for Remote Education',
+        github: '',
+        link: 'https://www.figma.com/file/ZabTcaDSrmzP7WdV7xgn8s/Aurora-Brainstorm?type=design&node-id=63%3A148&mode=design&t=Gm3InzIjsAkO0dHO-1',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1688004959/figmaworkspace_vw3s4h.png',
+        description: 'Diving into Figma to conceptualize the Aurora UI kit, experiment with Figma design tokens, designing logos, and my website.',
         tech: [
-            'React',
-            'JavaScript',
-            'SCSS',
+            'Figma'
         ]
     }
 ]

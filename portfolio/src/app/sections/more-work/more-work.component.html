@@ -1,6 +1,34 @@
 <h3>More things I'm working on</h3>
-<ng-container *ngFor="let project of projects" class="container">
-    <div class="project-container" *ngIf="!project.featuredProject">
-        {{ project.title }}
-    </div>
-</ng-container>
+<div class="wrapper">
+    <ng-container *ngFor="let project of projects">
+        <div class="project-container" *ngIf="!project.featuredProject">
+            <div class="project-container-first">
+                <a [href]="project.link" target="_blank">
+                    <h6>
+                        {{ project.title }}
+                    </h6>
+                </a>
+                <p>
+                    {{ project.description }}
+                </p>
+                <div class="tech-container">
+                    <a
+                        [href]="project.github"
+                        *ngIf="project.github"
+                        target="_blank"
+                    >
+                        <app-svg svg="github"></app-svg>
+                    </a>
+                    <app-chip *ngFor="let item of project.tech">{{
+                        item
+                    }}</app-chip>
+                </div>
+            </div>
+            <div class="project-container-img">
+                <a [href]="project.link">
+                    <img [src]="project.img" alt="" class="project-img" />
+                </a>
+            </div>
+        </div>
+    </ng-container>
+</div>
