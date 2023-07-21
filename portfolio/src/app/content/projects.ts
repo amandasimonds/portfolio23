@@ -13,6 +13,19 @@ export const Projects = [
         ]
     },
     {
+        title: 'Climbventures',
+        featuredProject: true,
+        github: 'https://github.com/amandasimonds/climbventures',
+        link: 'https://climbventures.netlify.app/',
+        figma: '',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1689976199/portfolio/climbventures_oaodzb.png',
+        description:`Frontend only website, depicting a searching & booking website for rock climbing expeditions. This was inspired by my interest in rock climbing, and a frontend app I saw on a fellow developer's youtube.`,
+        tech: [
+            'React',
+            'SCSS',
+        ]
+    },
+    {
         title: 'Aurora UI Library',
         featuredProject: true,
         github: 'https://github.com/amandasimonds/aurora-component-library',
