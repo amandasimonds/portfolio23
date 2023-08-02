@@ -79,7 +79,7 @@ export const Projects = [
         tech: [
             'Figma'
         ]
-    }
+    },
     {
         title: 'Stream Ed',
         featuredProject: false,
