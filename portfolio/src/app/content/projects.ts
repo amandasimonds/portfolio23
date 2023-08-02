@@ -70,12 +70,12 @@ export const Projects = [
         ]
     },
     {
-        title: 'Cocktail Recipe Poster',
+        title: 'Cocktail Menus',
         featuredProject: false,
         github: '',
         link: 'https://www.figma.com/file/LgZ682JftSnC0H3Cgc48IZ/Cocktail-Illustrations?type=design&node-id=20%3A1771&mode=design&t=1NNtljYYVVTjCKcg-1',
-        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1691003299/portfolio/figma_cocktails_czgzrl.png',
-        description: 'Created a digital illustration of a gin cocktail, using vectors in Figma. Designed 2 color themes, and made a menu poster',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1691007155/portfolio/figmacocktails_wsssa3.png',
+        description: 'Created a digital illustrations of cocktails, using vectors in Figma. Made multiple different types of layouts and color themes.',
         tech: [
             'Figma'
         ]
