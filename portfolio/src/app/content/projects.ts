@@ -70,6 +70,17 @@ export const Projects = [
         ]
     },
     {
+        title: 'Cocktail Recipe Poster',
+        featuredProject: false,
+        github: '',
+        link: 'https://www.figma.com/file/LgZ682JftSnC0H3Cgc48IZ/Cocktail-Illustrations?type=design&node-id=20%3A1771&mode=design&t=1NNtljYYVVTjCKcg-1',
+        img: 'https://res.cloudinary.com/dr0uztw3o/image/upload/v1691003299/portfolio/figma_cocktails_czgzrl.png',
+        description: 'Created a digital illustration of a gin cocktail, using vectors in Figma. Designed 2 color themes, and made a menu poster',
+        tech: [
+            'Figma'
+        ]
+    }
+    {
         title: 'Stream Ed',
         featuredProject: false,
         github: 'https://github.com/amandasimonds/stream-ed',
